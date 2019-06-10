@@ -1,0 +1,4 @@
+*[stretch] {
+  align-self: stretch;
+  flex: 1 1 auto;
+}

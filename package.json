@@ -1,0 +1,32 @@
+{
+  "name": "pylon",
+  "version": "0.0.1",
+  "description": "SwiftUI-like layout primitives for CSS & HTML",
+  "main": "index.js",
+  "files": [
+    "css",
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "devd ./examples"
+  },
+  "author": "almonk",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gulp-postcss": "^8.0.0",
+    "postcss-css-variables": "^0.12.0",
+    "postcss-import": "^12.0.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "contributors": [
+    {
+      "name": "Alasdair Monk",
+      "email": "alasdair.monk@gmail.com"
+    }
+  ],
+  "build": "gulp pylon"
+}

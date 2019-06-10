@@ -1,0 +1,26 @@
+text {
+  line-height: auto;
+}
+
+text[font=title] {
+  font-size: var(--font-xl);
+  font-weight: 600;
+}
+
+text[font=caption] {
+  color: var(--caption-color);
+  font-size: 13px;
+}
+
+text[bold] {
+  font-weight: 700;
+}
+
+text[underline],
+text[underline=true] {
+  text-decoration: underline;
+}
+
+text[underline=false] {
+  text-decoration: none;
+}

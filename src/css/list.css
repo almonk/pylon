@@ -1,0 +1,40 @@
+list {
+  display: flex;
+  align-self: stretch;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+list>* {
+  border-bottom: 1px solid var(--light-grey);
+  padding: var(--spacing-xs) 0;
+  margin: 0;
+}
+
+list vstack {
+  margin: 0;
+}
+
+list>*:last-child {
+  border-bottom: none;
+}
+
+list[spacing=xl]>* {
+  padding: var(--spacing-xl) 0;
+}
+
+list[spacing=l]>* {
+  padding: var(--spacing-l) 0;
+}
+
+list[spacing=s]>* {
+  padding: var(--spacing-s) 0;
+}
+
+list[spacing=xs]>* {
+  padding: var(--spacing-xs) 0;
+}
+
+list[spacing=xxs]>* {
+  padding: var(--spacing-xxs) 0;
+}

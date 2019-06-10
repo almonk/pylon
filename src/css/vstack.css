@@ -1,0 +1,30 @@
+vstack {
+  display: flex;
+  align-self: stretch;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+vstack[spacing=xl]>* {
+  margin-bottom: var(--spacing-xl);
+}
+
+vstack[spacing=l]>* {
+  margin-bottom: var(--spacing-l);
+}
+
+vstack[spacing=s]>* {
+  margin-bottom: var(--spacing-s);
+}
+
+vstack[spacing=xs]>* {
+  margin-bottom: var(--spacing-xs);
+}
+
+vstack[spacing=xxs]>* {
+  margin-bottom: var(--spacing-xxs);
+}
+
+vstack[spacing]>*:last-child {
+  margin-bottom: 0;
+}

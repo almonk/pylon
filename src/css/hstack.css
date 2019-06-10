@@ -1,0 +1,30 @@
+hstack {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: row;
+}
+
+hstack[spacing=xl]>* {
+  margin-right: var(--spacing-xl);
+}
+
+hstack[spacing=l]>* {
+  margin-right: var(--spacing-l);
+}
+
+hstack[spacing=s]>* {
+  margin-right: var(--spacing-s);
+}
+
+hstack[spacing=xs]>* {
+  margin-right: var(--spacing-xs);
+}
+
+hstack[spacing=xxs]>* {
+  margin-right: var(--spacing-xxs);
+}
+
+hstack[spacing]>*:last-child {
+  margin-right: 0;
+}

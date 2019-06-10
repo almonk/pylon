@@ -1,0 +1,26 @@
+:root {
+  /* General window setup */
+  --background: #fff;
+
+  /* Spacing */
+  --spacing-xl: 40px;
+  --spacing-l: 28px;
+  --spacing-m: 20px;
+  --spacing-s: 15px;
+  --spacing-xs: 10px;
+  --spacing-xxs: 6px;
+
+  /* Colors */
+  --black: #16161D;
+  --dark-grey: #585868;
+  --light-grey: #D9DDDE;
+  
+  --blue: #3D87F5;
+
+  /* Fonts */
+  --font-xl: 24px;
+  --font-l: 18px;
+  --font-m: 15px;
+  --font-s: 13px;
+  --primary-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
