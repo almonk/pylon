@@ -12,5 +12,5 @@ gulp.task("pylon", function() {
     .src("./src/pylon.css")
     .pipe(postcss(plugins))
     .pipe(gulp.dest("./css"))
-    .pipe(gulp.dest("./examples/pylon"));
+    .pipe(gulp.dest("./docs/pylon"));
 });
