@@ -50,9 +50,9 @@
     </style>
   </head>
   <body class="sans-serif">
-    <div class="mw8 center pa4 flex">
-      <div class="w-third mr4 mt5">
-        <h1 class="ma0 mb2">Pylon</h1>
+    <div class="mw8 center pa4-ns pa3 flex flex-column flex-row-ns items-center-ns">
+      <div class="w-100 w-third-ns mr4-ns mt5-ns">
+        <h1 class="ma0 mb2 mt3 mt0-ns">Pylon</h1>
         <h2 class="ma0 mb2 fw4 lh-title">
           Declarative layout primitives for CSS & HTML
         </h2>
@@ -60,10 +60,30 @@
           Pylon encapsulates Flexbox logic into a set of declarative and expressive tags and attributes which, when combined, form robust user interfaces.
         </p>
         <p class="ma0 mt2 lh-copy gray">
+          <vstack spacing=xs class="mt2">
+            <hstack spacing=xs alignment=leading>
+              <img src="https://img.icons8.com/material/48/00CCBC/checkmark.png" width=24 height=24>
+              <text>Compatible with every JavaScript framework (it's just HTML & CSS)</text>
+            </hstack>
+            <hstack spacing=xs alignment=leading>
+              <img src="https://img.icons8.com/material/48/00CCBC/checkmark.png" width=24 height=24>
+              <text>Easily configurable</text>
+            </hstack>
+            <hstack spacing=xs alignment=leading>
+              <img src="https://img.icons8.com/material/48/00CCBC/checkmark.png" width=24 height=24>
+              <text>Requires no JavaScript framework</text>
+            </hstack>
+            <hstack spacing=xs alignment=leading>
+              <img src="https://img.icons8.com/material/48/00CCBC/checkmark.png" width=24 height=24>
+              <text>Less than 2kb minified</text>
+            </hstack>
+          </vstack>
+        </p>
+        <p class="ma0 mt4 lh-copy gray">
           A thing by <a href="https://alasdairmonk.com" class="blue link">@almonk</a>
         </p>
       </div>
-      <div class="w-two-thirds relative pt4 blue">
+      <div class="w-100 w-two-thirds-ns relative pt4 blue">
         <list debug class="o-60">
           <hstack spacing="s">
             <div class="icon"></div>
@@ -91,8 +111,7 @@
           </hstack>
         </list>
         <pre
-          class="bg-white blue br3 absolute right-2 overflow-hidden shadow-3 f4"
-          style="bottom:-50px;"
+          class="bg-white blue br3 absolute right-1 right-2-ns mt2 bottom-2-ns overflow-hidden shadow-3 f5 f4-ns top-1"
         ><code class="html pa2">&#x3C;list debug&#x3E;
   &#x3C;hstack spacing=s&#x3E;
     &#x3C;div class=&#x22;icon&#x22;&#x3E;&#x3C;/div&#x3E;
@@ -105,9 +124,9 @@
     </div>
 
     <div class="bg-light-gray">
-      <div class="mt5 mw8 center pa4 flex mb4">
+      <div class="mt5 mw8 center pa4-ns pa3 flex flex-column mb4">
         <div class="w-100 mr4 mt2">
-          <div class="f4 fw6 mb2">Installation &amp; usage</div>
+          <div class="f4 fw6 mb2">Installation</div>
           <p class="ma0 gray lh-copy">
             Pylon can be used via CDN:
           </p>
@@ -123,13 +142,22 @@
       </div>
     </div>
 
+    <div class="mw8 center pa4-ns pa3 flex flex-column flex-row-ns">
+      <div class="w-100 w-third-ns mr4 mt2">
+        <div class="f4 fw6 mb2" id="stacks">Contents</div>
+        <div class="f5 gray pv2">Elements</div>
+        <a href="#stacks" class="blue db pv2 link">Stacks</a>
+        <a href="#lists" class="blue db pv2 link">Lists</a>
+        <a href="#dividers" class="blue db pv2 link">Dividers</a>
+        <a href="#spacers" class="blue db pv2 link">Spacers</a>
+        <a href="#helpers" class="blue db pv2 link">Helpers</a>
+        </div>
+    </div>
 
 
-
-
-    <div class="mt4 mw8 center pa4 flex mb4">
-      <div class="w-third mr4 mt2">
-        <div class="f4 fw6 mb2">Stacks</div>
+    <div class="mt4 mw8 center pa4-ns pa3 flex flex-column flex-row-ns mb4">
+      <div class="w-100 w-third-ns mr4 mt2">
+        <div class="f4 fw6 mb2" id="stacks">Stacks</div>
         <p class="ma0 lh-copy gray">
           Pylon brings iOS-like Stacks to the web, wrapping Flexbox with a
           simple syntax. There are two types of stack:
@@ -174,8 +202,8 @@
           <div class="gray">Aligns items along the cross-axis</div>
         </vstack>
       </div>
-      <div class="w-two-thirds">
-        <div class="ba br--top b--light-gray br3 bg-white pa3">
+      <div class="w-100 w-two-thirds-ns">
+        <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <hstack spacing="s">
             <input type="text" placeholder="Your name" />
             <input type="email" placeholder="Your email" />
@@ -190,7 +218,7 @@
   &#x3C;button&#x3E;Submit&#x3C;/button&#x3E;
 &#x3C;/hstack&#x3E;</code></pre>
 
-        <div class="mt3 ba br--top b--light-gray br3 bg-white pa3">
+        <div class="mt3 ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <vstack spacing="s">
             <input type="text" placeholder="Your name" />
             <input type="email" placeholder="Your email" />
@@ -207,9 +235,9 @@
       </div>
     </div>
 
-    <div class="mw8 center pa4 flex mt0 mb4">
-      <div class="w-third mr4 mt2">
-        <div class="f4 fw6 mb2">Lists</div>
+    <div class="mw8 center pa4-ns pa3 flex flex-column flex-row-ns mt0 mb4">
+      <div class="w-100 w-third-ns mr4 mt2">
+        <div class="f4 fw6 mb2" id="lists">Lists</div>
         <p class="ma0 lh-copy gray">
           Lists are similar to a <code>vstack</code> but have some built in
           conveniences. The List element will assume its immediate children are
@@ -239,8 +267,8 @@
           <div class="gray">Aligns items along the axis</div>
         </vstack>
       </div>
-      <div class="w-two-thirds">
-        <div class="ba br--top b--light-gray br3 bg-white pa3">
+      <div class="w-two-thirds-ns w-100">
+        <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <list>
             <text>Red</text>
             <text>Yellow</text>
@@ -258,7 +286,7 @@
   &#x3C;text&#x3E;Pink&#x3C;/text&#x3E;
   &#x3C;text&#x3E;Blue&#x3C;/text&#x3E;
 &#x3C;/list&#x3E;</code></pre>
-        <div class="ba br--top b--light-gray br3 bg-white pa3 mt3">
+        <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll mt3">
           <list spacing="s">
             <hstack>
               <label>
@@ -297,15 +325,15 @@
       </div>
     </div>
 
-    <div class="mw8 center pa4 flex mt0 mb4">
-      <div class="w-third mr4 mt2">
-        <div class="f4 fw6 mb2">Dividers</div>
+    <div class="mw8 center pa4-ns pa3 flex flex-column flex-row-ns mt0 mb4">
+      <div class="w-100 w-third-ns mr4 mt2">
+        <div class="f4 fw6 mb2" id="dividers">Dividers</div>
         <p class="ma0 lh-copy gray">
           Dividers are used to visually divide items in a stack.
         </p>
       </div>
-      <div class="w-two-thirds">
-        <div class="ba br--top b--light-gray br3 bg-white pa3">
+      <div class="w-two-thirds-ns w-100">
+        <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <hstack spacing="xs">
             <input stretch type="text" placeholder="Add a todo" />
             <button>Add</button>
@@ -324,15 +352,15 @@
       </div>
     </div>
 
-    <div class="mw8 center pa4 flex mt0 mb4">
-      <div class="w-third mr4 mt2">
-        <div class="f4 fw6 mb2">Spacers</div>
+    <div class="mw8 center pa4-ns pa3 flex flex-column flex-row-ns mt0 mb4">
+      <div class="w-100 w-third-ns mr4 mt2">
+        <div class="f4 fw6 mb2" id="spacers">Spacers</div>
         <p class="ma0 lh-copy gray">
           Spacers stretch to fill available space.
         </p>
       </div>
-      <div class="w-two-thirds">
-        <div class="ba br--top b--light-gray br3 bg-white pa3">
+      <div class="w-two-thirds-ns w-100">
+        <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <hstack>
             <button>Cancel</button>
             <spacer></spacer>
@@ -349,9 +377,9 @@
       </div>
     </div>
 
-    <div class="mw8 center pa4 flex mt0 mb4">
-      <div class="w-third mr4 mt2">
-        <div class="f4 fw6 mb2">Helpers</div>
+    <div class="mw8 center pa4-ns pa3 flex flex-column flex-row-ns mt0 mb4">
+      <div class="w-100 w-third-ns mr4 mt2">
+        <div class="f4 fw6 mb2" id="helpers">Helpers</div>
         <p class="ma0 lh-copy gray">
           Generic attributes which can be applied to any element.
         </p>
@@ -368,8 +396,8 @@
           </div>
         </vstack>
       </div>
-      <div class="w-two-thirds">
-        <div class="ba br--top b--light-gray br3 bg-white pa3">
+      <div class="w-two-thirds-ns w-100">
+        <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <hstack debug>
             <button>Cancel</button>
             <spacer></spacer>
@@ -383,7 +411,7 @@
   &#x3C;spacer&#x3E;&#x3C;/spacer&#x3E;
   &#x3C;button&#x3E;Submit&#x3C;/button&#x3E;
 &#x3C;/hstack&#x3E;</code></pre>
-        <div class="mt3 ba br--top b--light-gray br3 bg-white pa3">
+        <div class="mt3 ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
           <hstack debug spacing=s>
             <button>Cancel</button>
             <button stretch>Submit</button>
