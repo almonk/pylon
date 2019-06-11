@@ -5,26 +5,26 @@ hstack {
   flex-direction: row;
 }
 
-hstack[spacing=xl]>* {
+hstack[spacing=xl] > * {
   margin-right: var(--spacing-xl);
 }
 
-hstack[spacing=l]>* {
+hstack[spacing=l] > * {
   margin-right: var(--spacing-l);
 }
 
-hstack[spacing=s]>* {
+hstack[spacing=s] > * {
   margin-right: var(--spacing-s);
 }
 
-hstack[spacing=xs]>* {
+hstack[spacing=xs] > * {
   margin-right: var(--spacing-xs);
 }
 
-hstack[spacing=xxs]>* {
+hstack[spacing=xxs] > * {
   margin-right: var(--spacing-xxs);
 }
 
-hstack[spacing]>*:last-child {
+hstack[spacing] > *:last-child {
   margin-right: 0;
 }

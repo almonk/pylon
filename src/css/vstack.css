@@ -5,26 +5,26 @@ vstack {
   flex-direction: column;
 }
 
-vstack[spacing=xl]>* {
+vstack[spacing=xl] > * {
   margin-bottom: var(--spacing-xl);
 }
 
-vstack[spacing=l]>* {
+vstack[spacing=l] > * {
   margin-bottom: var(--spacing-l);
 }
 
-vstack[spacing=s]>* {
+vstack[spacing=s] > * {
   margin-bottom: var(--spacing-s);
 }
 
-vstack[spacing=xs]>* {
+vstack[spacing=xs] > * {
   margin-bottom: var(--spacing-xs);
 }
 
-vstack[spacing=xxs]>* {
+vstack[spacing=xxs] > * {
   margin-bottom: var(--spacing-xxs);
 }
 
-vstack[spacing]>*:last-child {
+vstack[spacing] > *:last-child {
   margin-bottom: 0;
 }
