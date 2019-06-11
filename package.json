@@ -1,5 +1,5 @@
 {
-  "name": "pylon",
+  "name": "pyloncss",
   "version": "0.0.1",
   "description": "SwiftUI-like layout primitives for CSS & HTML",
   "main": "index.js",
