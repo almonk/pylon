@@ -1,6 +1,6 @@
 {
   "name": "pyloncss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "SwiftUI-like layout primitives for CSS & HTML",
   "main": "index.js",
   "files": [
