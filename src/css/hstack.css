@@ -13,6 +13,10 @@ hstack[spacing=l] > * {
   margin-right: var(--spacing-l);
 }
 
+hstack[spacing=m] > * {
+  margin-right: var(--spacing-m);
+}
+
 hstack[spacing=s] > * {
   margin-right: var(--spacing-s);
 }

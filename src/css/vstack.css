@@ -13,6 +13,10 @@ vstack[spacing=l] > * {
   margin-bottom: var(--spacing-l);
 }
 
+vstack[spacing=m] > * {
+  margin-bottom: var(--spacing-m);
+}
+
 vstack[spacing=s] > * {
   margin-bottom: var(--spacing-s);
 }
