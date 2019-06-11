@@ -8,6 +8,7 @@
 @import "./css/spacer.css";
 @import "./css/divider.css";
 @import "./css/text.css";
+@import "./css/view.css";
 
 /* Helpers */
 @import "./css/_alignment.css";
