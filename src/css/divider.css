@@ -3,7 +3,7 @@ divider {
   align-self: stretch;
 }
 
-vstack>divider {
+vstack > divider {
   margin: var(--spacing-xs) 0;
   height: 1px;
 }
@@ -12,7 +12,7 @@ vstack[spacing] > divider {
   margin-top: 0;
 }
 
-hstack>divider {
+hstack > divider {
   margin: 0 var(--spacing-xs);
   width: 1px;
 }
@@ -21,6 +21,6 @@ hstack[spacing] > divider {
   margin-left: 0;
 }
 
-divider+list {
+divider + list {
   margin-top: calc(-1 * var(--spacing-xs));
 }

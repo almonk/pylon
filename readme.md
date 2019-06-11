@@ -17,3 +17,8 @@ Please see https://almonk.github.io/pylon/
 $ npm install
 $ gulp pylon
 ```
+
+If `gulp pylon` fails, you probably need to install the [gulp.js](https://gulpjs.com/) `gulp-cli`:
+```
+$ npm install --global gulp-cli
+```

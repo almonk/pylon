@@ -3,4 +3,8 @@ view {
   height: 100%;
 }
 
-.pylon{height:100%;padding:0;margin:0}
+.pylon{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
