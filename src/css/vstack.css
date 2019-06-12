@@ -32,3 +32,27 @@ vstack[spacing=xxs] > * {
 vstack[spacing] > *:last-child {
   margin-bottom: 0;
 }
+
+vstack[align-x=left] {
+  align-items: flex-start;
+}
+
+vstack[align-x=center] {
+  align-items: center;
+}
+
+vstack[align-x=right] {
+  align-items: flex-end;
+}
+
+vstack[align-y=top] {
+  justify-content: flex-start;
+}
+
+vstack[align-y=center] {
+  justify-content: center;
+}
+
+vstack[align-y=bottom] {
+  justify-content: flex-end;
+}

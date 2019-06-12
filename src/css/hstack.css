@@ -32,3 +32,29 @@ hstack[spacing=xxs] > * {
 hstack[spacing] > *:last-child {
   margin-right: 0;
 }
+
+/* Hstack Specific alignments */
+
+hstack[align-y=top] {
+  align-items: flex-start;
+}
+
+hstack[align-y=center] {
+  align-items: center;
+}
+
+hstack[align-y=bottom] {
+  align-items: flex-end;
+}
+
+hstack[align-x=left] {
+  justify-content: flex-start;
+}
+
+hstack[align-x=center] {
+  justify-content: center;
+}
+
+hstack[align-x=right] {
+  justify-content: flex-end;
+}

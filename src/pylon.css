@@ -11,6 +11,5 @@
 @import "./css/view.css";
 
 /* Helpers */
-@import "./css/_alignment.css";
 @import "./css/_debug.css";
 @import "./css/_stretch.css";

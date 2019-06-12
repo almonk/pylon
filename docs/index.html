@@ -86,7 +86,7 @@
         </p>
       </div>
       <div class="w-100 w-two-thirds-ns relative pt4 blue">
-        <list debug class="o-60">
+        <list spacing=xs debug class="o-60">
           <hstack spacing="s">
             <div class="icon"></div>
             <text>Westminster</text>
@@ -120,7 +120,7 @@
         </list>
         <pre
           class="bg-light-gray blue br3 absolute right-1 right-2-ns mt2 bottom-2-ns overflow-hidden shadow-3 f5 f4-ns top-1"
-        ><code class="html pa2">&#x3C;list&#x3E;
+        ><code class="html pa2">&#x3C;list spacing=s&#x3E;
   &#x3C;hstack spacing=s&#x3E;
     &#x3C;div class=&#x22;icon&#x22;&#x3E;&#x3C;/div&#x3E;
     &#x3C;text&#x3E;Westminster&#x3C;/text&#x3E;
@@ -179,7 +179,7 @@
         </p>
 
         <p class="ma0 lh-copy near-black mt3 f6 fw5">Stack Attributes</p>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
           <code class="bg-light-gray br2 pa1">spacing=</code>
           <hstack spacing="xxs">
             <code class="bg-white ba b--light-gray br2 pa1 gray">xxs</code>
@@ -191,23 +191,23 @@
           </hstack>
           <div class="gray">Spacing between children within a Stack</div>
         </vstack>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
-          <code class="bg-light-gray br2 pa1">alignment=</code>
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
+          <code class="bg-light-gray br2 pa1">align-x=</code>
           <hstack spacing="xxs">
-            <code class="bg-white ba b--light-gray br2 pa1 gray">leading</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">left</code>
             <code class="bg-white ba b--light-gray br2 pa1 gray">center</code>
-            <code class="bg-white ba b--light-gray br2 pa1 gray">trailing</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">right</code>
           </hstack>
-          <div class="gray">Aligns items along the axis</div>
+          <div class="gray">Aligns items along the horizontal axis</div>
         </vstack>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
-          <code class="bg-light-gray br2 pa1">justify=</code>
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
+          <code class="bg-light-gray br2 pa1">align-y=</code>
           <hstack spacing="xxs">
-            <code class="bg-white ba b--light-gray br2 pa1 gray">leading</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">top</code>
             <code class="bg-white ba b--light-gray br2 pa1 gray">center</code>
-            <code class="bg-white ba b--light-gray br2 pa1 gray">trailing</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">bottom</code>
           </hstack>
-          <div class="gray">Aligns items along the cross-axis</div>
+          <div class="gray">Aligns items along the vertical axis</div>
         </vstack>
       </div>
       <div class="w-100 w-two-thirds-ns">
@@ -240,6 +240,18 @@
   &#x3C;input type=&#x22;email&#x22; placeholder=&#x22;Your email&#x22; /&#x3E;
   &#x3C;button&#x3E;Submit&#x3C;/button&#x3E;
 &#x3C;/vstack&#x3E;</code></pre>
+        
+        <div class="mt3 ba br--top b--light-gray br3 bg-white pa3 overflow-scroll" style="height:150px" debug>
+          <vstack stretch align-x=center align-y=center>
+            Hello world.
+          </vstack>
+        </div>
+        <pre
+          class="ma0 br3 br--bottom bg-white overflow-hidden"
+        ><code class="html">&#x3C;vstack stretch align-x=center align-y=center&#x3E;
+  Hello world.
+&#x3C;/vstack&#x3E;</code></pre>
+
       </div>
     </div>
 
@@ -253,7 +265,7 @@
           row.
         </p>
         <p class="ma0 lh-copy near-black mt3 f6 fw5">List Attributes</p>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
           <code class="bg-light-gray br2 pa1">spacing=</code>
           <hstack spacing="xxs">
             <code class="bg-white ba b--light-gray br2 pa1 gray">xxs</code>
@@ -265,69 +277,66 @@
           </hstack>
           <div class="gray">Spacing between children within a Stack</div>
         </vstack>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
-          <code class="bg-light-gray br2 pa1">alignment=</code>
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
+          <code class="bg-light-gray br2 pa1">align-x=</code>
           <hstack spacing="xxs">
-            <code class="bg-white ba b--light-gray br2 pa1 gray">leading</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">left</code>
             <code class="bg-white ba b--light-gray br2 pa1 gray">center</code>
-            <code class="bg-white ba b--light-gray br2 pa1 gray">trailing</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">right</code>
           </hstack>
-          <div class="gray">Aligns items along the axis</div>
+          <div class="gray">Aligns items along the horizontal axis</div>
+        </vstack>
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
+          <code class="bg-light-gray br2 pa1">align-y=</code>
+          <hstack spacing="xxs">
+            <code class="bg-white ba b--light-gray br2 pa1 gray">top</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">center</code>
+            <code class="bg-white ba b--light-gray br2 pa1 gray">bottom</code>
+          </hstack>
+          <div class="gray">Aligns items along the vertical axis</div>
         </vstack>
       </div>
       <div class="w-two-thirds-ns w-100">
         <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll">
-          <list>
+          <list spacing=xs>
             <text>Red</text>
-            <text>Yellow</text>
             <text>Green</text>
-            <text>Pink</text>
             <text>Blue</text>
           </list>
         </div>
         <pre
           class="ma0 br3 br--bottom bg-white overflow-hidden"
-        ><code class="html">&#x3C;list&#x3E;
+        ><code class="html">&#x3C;list spacing=xs&#x3E;
   &#x3C;text&#x3E;Red&#x3C;/text&#x3E;
-  &#x3C;text&#x3E;Yellow&#x3C;/text&#x3E;
   &#x3C;text&#x3E;Green&#x3C;/text&#x3E;
-  &#x3C;text&#x3E;Pink&#x3C;/text&#x3E;
   &#x3C;text&#x3E;Blue&#x3C;/text&#x3E;
 &#x3C;/list&#x3E;</code></pre>
         <div class="ba br--top b--light-gray br3 bg-white pa3 overflow-scroll mt3">
           <list spacing="s">
-            <hstack>
-              <label>
-                <input type="checkbox" />
-                Buy milk
-              </label>
+            <hstack spacing=xs>
+              <input type="checkbox" />
+              <label>Do laundry</label>
               <spacer></spacer>
               <div>Due today</div>
             </hstack>
-            <hstack>
-              <label>
-                <input type="checkbox" />
-                Pick up laundry
-              </label>
+            <hstack spacing=xs>
+              <input type="checkbox" />
+              <label>Buy milk</label>
             </hstack>
           </list>
         </div>
         <pre
           class="ma0 br3 br--bottom bg-white overflow-hidden"
-        ><code class="html">&#x3C;list spacing=s&#x3E;
-  &#x3C;hstack&#x3E;
-    &#x3C;label&#x3E;
-      &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
-      Buy milk
-    &#x3C;/label&#x3E;
+        ><code class="html">&#x3C;list spacing=&#x22;s&#x22;&#x3E;
+  &#x3C;hstack spacing=xs&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; /&#x3E;
+    &#x3C;label&#x3E;Do laundry&#x3C;/label&#x3E;
     &#x3C;spacer&#x3E;&#x3C;/spacer&#x3E;
     &#x3C;div&#x3E;Due today&#x3C;/div&#x3E;
   &#x3C;/hstack&#x3E;
-  &#x3C;hstack&#x3E;
-    &#x3C;label&#x3E;
-      &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
-      Pick up laundry
-    &#x3C;/label&#x3E;
+  &#x3C;hstack spacing=xs&#x3E;
+    &#x3C;input type=&#x22;checkbox&#x22; /&#x3E;
+    &#x3C;label&#x3E;Buy milk&#x3C;/label&#x3E;
   &#x3C;/hstack&#x3E;
 &#x3C;/list&#x3E;</code></pre>
       </div>
@@ -391,13 +400,13 @@
         <p class="ma0 lh-copy gray">
           Generic attributes which can be applied to any element.
         </p>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
           <code class="bg-light-gray br2 pa1">debug</code>
           <div class="gray lh-copy">
             Outlines all child elements to visually see boundaries
           </div>
         </vstack>
-        <vstack spacing="xxs" alignment="leading" class="f6 mt2 mb3">
+        <vstack spacing="xxs" align-x="left" class="f6 mt2 mb3">
           <code class="bg-light-gray br2 pa1">stretch</code>
           <div class="gray lh-copy">
             Instructs the element to fill available space
