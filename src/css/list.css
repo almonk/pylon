@@ -7,7 +7,6 @@ list {
 
 list > * {
   border-bottom: 1px solid var(--light-grey);
-  padding: var(--spacing-xs) 0;
   margin: 0;
 }
 
@@ -37,4 +36,30 @@ list[spacing=xs] > * {
 
 list[spacing=xxs] > * {
   padding: var(--spacing-xxs) 0;
+}
+
+/* List specific alignments */
+
+list[align-x=left] {
+  align-items: flex-start;
+}
+
+list[align-x=center] {
+  align-items: center;
+}
+
+list[align-x=right] {
+  align-items: flex-end;
+}
+
+list[align-y=top] {
+  justify-content: flex-start;
+}
+
+list[align-y=center] {
+  justify-content: center;
+}
+
+list[align-y=bottom] {
+  justify-content: flex-end;
 }

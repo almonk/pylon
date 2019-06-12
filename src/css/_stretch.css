@@ -2,3 +2,7 @@
   align-self: stretch;
   flex: 1 1 auto;
 }
+
+vstack[stretch] {
+  height: 100%;
+}
