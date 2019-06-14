@@ -5,7 +5,7 @@ var atImport = require("postcss-import");
 var cssnano = require("cssnano");
 var cssvariables = require("postcss-css-variables");
 
-gulp.task("pylon", function() {
+gulp.task("buildCss", function() {
   var plugins = [atImport, cssnano, cssvariables];
 
   return gulp
@@ -14,3 +14,12 @@ gulp.task("pylon", function() {
     .pipe(gulp.dest("./css"))
     .pipe(gulp.dest("./docs/pylon"));
 });
+
+
+gulp.task("buildJs", function() {
+  return gulp
+    .src("./js/pylon.js")
+    .pipe(gulp.dest("./js"))
+});
+
+gulp.task("pylon", ["cbuildCssss", "buildJs"]);
