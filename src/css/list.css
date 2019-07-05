@@ -26,6 +26,10 @@ list[spacing=l] > * {
   padding: var(--spacing-l) 0;
 }
 
+list[spacing=m] > * {
+  padding: var(--spacing-m) 0;
+}
+
 list[spacing=s] > * {
   padding: var(--spacing-s) 0;
 }
